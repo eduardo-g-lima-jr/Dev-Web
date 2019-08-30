@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Pagination UI Desing</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <script src='momentum.min.js'></script>
+    </head>
+    <body>
+        <ul class="pagination">
+            <li><a href="#" class="prev">< Anterior</a></li>
+            <li class="pageNumber active"><a href="#">1</a></li>
+            <li class="pageNumber"><a href="#">2</a></li>
+            <li class="pageNumber"><a href="#">3</a></li>
+            <li class="pageNumber"><a href="#">4</a></li>
+            <li class="pageNumber"><a href="#">5</a></li>
+            <li class="pageNumber"><a href="#">6</a></li>
+            <li><a href="#" class="next">Próximo ></a></li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.next').click(function(){
+                    $('.pagination').find('.pageNumber.active').next().addClass('active');
+                    $('.pagination').find('.pageNumber.active').prev().removeClass('active');
+                })
+                $('.prev').click(function(){
+                    $('.pagination').find('.pageNumber.active').prev().addClass('active');
+                    $('.pagination').find('.pageNumber.active').next().removeClass('active');
+                })
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 90vh;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
