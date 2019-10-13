@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.carousel{
+  position: relative;
+  height: 600px;
+  perspective: 1500px;
+}
+.carousel .carousel-item{
+  width: 350px;
+}
+.carousel .carousel-item img{
+  max-width: 350px;
+}
