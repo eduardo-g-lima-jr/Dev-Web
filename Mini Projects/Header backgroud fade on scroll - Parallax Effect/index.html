@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Header Parallax</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <div id="bg"></div>
+  </div>
+  <section>
+    <h2>Header Parallax</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat dapibus sollicitudin. Integer faucibus erat eget nibh bibendum, vel pharetra ante blandit. Praesent eu nibh vel metus euismod feugiat. Morbi tempus nibh ac ipsum fringilla fermentum. Maecenas sit amet ipsum purus. Nulla tempus tempus congue. Nullam accumsan, lacus vel mollis maximus, quam turpis egestas tellus, id maximus felis dui sit amet neque. Etiam sed tempor nulla. Nam id tellus et est mollis ornare eu a velit.
+
+      Nullam pharetra, nisi a efficitur facilisis, libero ex semper dolor, ultrices ultrices sem sem ac augue. Nunc ullamcorper imperdiet massa, quis malesuada dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum mattis dui fermentum neque tristique, id mattis tellus consectetur. Quisque porta risus vel lorem malesuada placerat. Phasellus malesuada lacus nulla, sollicitudin luctus dui tempor at. In efficitur vehicula feugiat. Sed at eros eu turpis lacinia iaculis non eu mi. Etiam finibus lectus orci, sit amet feugiat purus dapibus ac.
+
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eget nulla congue, finibus risus vel, malesuada dolor. Nam condimentum volutpat massa, sit amet mattis orci tincidunt in. Maecenas blandit vel mauris eu posuere. Nulla ac diam et dui tincidunt iaculis. Aliquam libero arcu, efficitur malesuada dolor lacinia, bibendum congue nibh. Curabitur ut semper justo, eu dignissim nulla. Vivamus dapibus diam ut est ullamcorper, eget sollicitudin quam aliquam. Donec hendrerit gravida condimentum. Nulla magna mi, maximus ut tortor at, lacinia congue nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+      Suspendisse at hendrerit nibh. Suspendisse potenti. Phasellus dictum quam at diam facilisis, in gravida neque vestibulum. Donec sit amet feugiat tortor, vitae vulputate nisi. Aliquam facilisis quam ut mattis tempor. Etiam eu risus aliquam, maximus nunc a, placerat ipsum. Nam non consequat massa.
+    </p>    
+  </section>
+  
+  <script type="text/javascript">
+    var headerBg =document.getElementById('bg')
+    window.addEventListener('scroll',function(){
+      headerBg.style.opacity = 1 - +window.pageYOffset/550+''
+      headerBg.style.top = +window.pageYOffset+'px'
+      headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px'
+    })
+  </script>
+</body>
+</html>
