@@ -19,6 +19,17 @@
   background: #333;
   z-index: -2;
 }
+.container::after{
+  content: 'Healthy';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 18vw;
+  z-index: -2;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.4;
+}
 header{
   display: flex;
   justify-content: space-between;
@@ -47,7 +58,40 @@ header ul li a{
   position: relative;
   text-decoration: none;
   font-size: 18px;
-  padding-left: 4px 10px;
+  padding: 4px 10px;
   color: #333;
   text-decoration: none;
+}
+header ul li:nth-child(3) a,
+header ul li:nth-child(4) a{
+  color: #fff;
+}
+header ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #78ff00;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+header ul li a:hover:before,
+header ul li a.active:before{
+  width: 40px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.content .bannerText{
+  position: relative;
+  max-width: 500px;
+  margin-right: 50px;
+}
+.content .bannerText h2{
+  
 }
