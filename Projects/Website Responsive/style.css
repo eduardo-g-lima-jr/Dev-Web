@@ -113,4 +113,21 @@ header ul li a.active:before{
   color: #333;
   letter-spacing: 1px;
   font-size: 18px;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.content .bannerText a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  background: #78ff00;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+.content .bannerText a:hover:before,
+.content .bannerText a.active:before{
+  width: 110%;
 }
